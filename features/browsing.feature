@@ -8,3 +8,4 @@ Feature: browsing
     When I sign up for an account
     And I go to account page to delete my account
     Then I have successfully closed the account
+
