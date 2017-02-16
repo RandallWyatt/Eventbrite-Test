@@ -1,4 +1,4 @@
-Given /^I am not on the Eventbrite page$/ do
+Given /^I go to the Eventbrite signup page$/ do
   visit SignUp
 end
 
