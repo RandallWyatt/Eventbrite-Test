@@ -10,7 +10,7 @@ When(/^I sign up for an account$/) do
 end
 
 And(/^I go to account page to delete my account$/) do
-  visit(Zccount).close_account_action
+  visit(Account).close_account_action
 end
 
 

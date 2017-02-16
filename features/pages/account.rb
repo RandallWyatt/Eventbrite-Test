@@ -1,4 +1,4 @@
-class Zccount
+class Account
   include PageObject
 
   page_url BASE_URL+'/account-close'
