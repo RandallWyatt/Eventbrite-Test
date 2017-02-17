@@ -1,4 +1,4 @@
-require_relative 'account'
+
 
 class SignUp
   include PageObject

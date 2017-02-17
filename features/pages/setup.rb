@@ -8,7 +8,7 @@ class Setup
   text_field(:set_first_name, id:'contactinfo_firstname')
   text_field(:set_last_name, id:'contactinfo_lastname')
   text_field(:set_age, id:'contactinfo_age')
-  button(:save_info, text:'Save')
+  div(:save_info, class:'g-cell g-cell-1-1', href:'#', text:'Save')
 
   def enter_personal_info
     self.set_first_name = 'Randall'

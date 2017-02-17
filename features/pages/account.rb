@@ -1,7 +1,7 @@
 class Account
   include PageObject
 
-  page_url BASE_URL+'/account-close'
+  page_url BASE_URL+'/account/'
 
   link(:profile_dropdown, class:'header-link user-avatar js-gh-action user-avatar-no-img')
   link(:account_settings_link, class:'js-d-track-link')
@@ -25,5 +25,14 @@ class Account
     wait_until(5,"#{text} failed to appear"){
       self.text.include? text
     }
+  end
+
+  def close_account_after_signup
+    close_account
+    other_radio_element.select
+    self.reason = 'testing'
+    self.close_text = 'CLOSE'
+    self.password_to_close = 'P4ssw0rd'
+    close_account_button
   end
 end

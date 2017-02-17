@@ -18,9 +18,5 @@ Then(/^I have successfully closed the account$/) do
   @current_page.should_contain_text 'Your account was closed. Thank you for using us.'
 end
 
-When(/^I successfully log in and delete my account$/) do
-  visit(SignUp).login_action
-  visit(Account).close_account_action
-end
 
 
